@@ -6,9 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { IndexComponent } from './index/index.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const appRoutes: Routes = [
-  { path: '**', component: IndexComponent}
+  { path: 'projects', component: ProjectsComponent },
+  { path: '', component: IndexComponent },
+  { path: '**', redirectTo: '/' }
 ]
 
 @NgModule({
@@ -16,7 +19,8 @@ const appRoutes: Routes = [
     AppComponent,
     NavbarComponent,
     IndexComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
