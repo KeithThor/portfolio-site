@@ -9,6 +9,7 @@
 
 .project-button {
     margin: 4px;
+    min-width: 150px;
 }
 
 .project-img {
